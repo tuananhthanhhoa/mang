@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tim giá trị lớn nhất-nhỏ nhất trong mảng random</title>
+</head>
+
+<body>
+    <script>
+        let number = [Math.floor(Math.random() * 101)];
+        let xMin = number[0];
+        let index = 0;
+        function min() {
+            for (let i = 0; i < 100; i++) {
+                // number[i]=Math.floor(Math.random()*101);
+                if (number[i] < xMin) {
+                    xMin = number[i];
+                    index = i;
+                }
+            }
+            console.log('giá trị nhỏ nhất ' + xMin + ' vị trí của giá trị nhỏ nhất ' + index);
+        }
+        min();
+    </script>
+</body>
+
+</html>
