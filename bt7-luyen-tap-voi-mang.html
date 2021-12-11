@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luyện tập các hàm trong mảng</title>
+</head>
+
+<body>
+    <script>
+        //bài tập 1 luyện tập với hàm tostring
+        let myColor = ['Red', 'Green', 'White', 'Black'];
+        document.write(myColor.toString(''));
+
+        //bài 2
+        const num =prompt();
+        const str = num.toString();
+        const result = [str[0]];//[0] là giá trị đầu tiên có vị trí index là 0
+
+        for (let x = 1; x < str.length; x++) {
+            if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
+                result.push('-', str[x]);//câu lệnh push là thêm giá trị vào cuối mảng
+            }
+            else {
+                result.push(str[x]);
+            }
+        }
+        document.write(result.join(''));//join là hàm chuyển giá trị trong mảng thành 1 chuỗi
+
+        
+
+        
+    </script>
+</body>
+
+</html>
